@@ -1,0 +1,97 @@
+.layout {
+  display: grid;
+  grid-template-columns: 240px 1fr 240px;
+  flex: 1;
+  gap: 0;
+  min-height: calc(100vh - 50px);
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sidebar {
+  background: #141428;
+  border-right: 1px solid #2a2a4a;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.sidebar:last-child {
+  border-right: none;
+  border-left: 1px solid #2a2a4a;
+}
+
+.main {
+  padding: 1.25rem;
+  overflow-y: auto;
+}
+
+.sectionTitle {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6a6080;
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.hint {
+  font-size: 0.82rem;
+  color: #4a4060;
+  margin: 0 0 0.5rem;
+}
+
+.charCard {
+  background: #1e1e38;
+  border: 1px solid #2a2a4a;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.charName {
+  font-size: 0.9rem;
+  color: #c0b8d8;
+  font-weight: 600;
+}
+
+.charType {
+  font-size: 0.7rem;
+  color: #6a6080;
+  background: #0f0f1a;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+}
+
+.participant {
+  font-size: 0.85rem;
+  color: #9090c0;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #1e1e38;
+}
+
+.phaseBox {
+  background: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 600px;
+}
+
+.comingSoon {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #0f0f1a;
+  border: 1px dashed #2a2a4a;
+  border-radius: 6px;
+  color: #3a3550;
+  font-size: 0.85rem;
+  text-align: center;
+}

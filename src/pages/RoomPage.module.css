@@ -1,0 +1,123 @@
+.centerScreen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: #8a7fa0;
+  background: #0f0f1a;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid #2a2a4a;
+  border-top-color: #7c6fcd;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.errorMsg {
+  color: #e06060;
+}
+
+.backBtn {
+  background: #4a3fcd;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.roomWrapper {
+  min-height: 100vh;
+  background: #0f0f1a;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #1a1a2e;
+  border-bottom: 1px solid #2a2a4a;
+  padding: 0.6rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.roomCode {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #b8a9e8;
+  letter-spacing: 0.12em;
+}
+
+.phaseBadge {
+  background: #2a2a4a;
+  color: #a090d0;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  border: 1px solid #3a3560;
+}
+
+.roundLabel {
+  font-size: 0.85rem;
+  color: #6a6080;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.userTag {
+  font-size: 0.85rem;
+  color: #8a7fa0;
+}
+
+.copyBtn {
+  background: #2a2a4a;
+  border: 1px solid #4a3fcd;
+  border-radius: 6px;
+  color: #a090f0;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.copyBtn:hover {
+  background: #3a3060;
+}
+
+.leaveBtn {
+  background: none;
+  border: 1px solid #3a2a2a;
+  border-radius: 6px;
+  color: #7a5050;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.leaveBtn:hover {
+  border-color: #a06060;
+  color: #c07070;
+}
