@@ -1,0 +1,117 @@
+.card {
+  background: #1a1a30;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.1rem;
+}
+
+.name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #c8b8f0;
+  flex: 1;
+}
+
+.badge {
+  font-size: 0.65rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.pc  { background: #1e3060; color: #80a0f0; }
+.npc { background: #3a1e1e; color: #e08080; }
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: #4a3a4a;
+  cursor: pointer;
+  font-size: 0.7rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  transition: color 0.2s;
+}
+.deleteBtn:hover { color: #e06060; }
+
+.barLabel {
+  font-size: 0.7rem;
+  color: #6a6080;
+}
+
+.barTrack {
+  height: 8px;
+  background: #0f0f1a;
+  border-radius: 4px;
+  position: relative;
+  overflow: visible;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease, background 0.4s ease;
+}
+
+.threshold {
+  position: absolute;
+  top: -3px;
+  width: 2px;
+  height: 14px;
+  background: #e06060;
+  border-radius: 1px;
+  transform: translateX(-50%);
+}
+
+.focusFill {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.focusCenter {
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  width: 1px;
+  height: 12px;
+  background: #4a4060;
+  transform: translateX(-50%);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.2rem;
+}
+
+.skillChip {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: #0f0f1a;
+  border: 1px solid #2a2a4a;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.72rem;
+  color: #9080b0;
+}
+
+.skillPow {
+  color: #6050a0;
+  font-size: 0.68rem;
+}

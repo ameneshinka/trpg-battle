@@ -1,0 +1,201 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 640px;
+}
+
+.formTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #b8a9e8;
+  margin: 0 0 0.25rem;
+}
+
+.sectionLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6a6080;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #2a2a4a;
+  margin-top: 0.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+}
+
+.field label {
+  font-size: 0.75rem;
+  color: #8a7fa0;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.field input,
+.field select {
+  background: #0f0f1a;
+  border: 1px solid #2a2a4a;
+  border-radius: 5px;
+  padding: 0.5rem 0.7rem;
+  color: #e8e0ff;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: #7c6fcd;
+}
+
+.field input::placeholder {
+  color: #3a3550;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.5rem;
+}
+
+.statField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.statField label {
+  font-size: 0.7rem;
+  color: #8a7fa0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.statField input {
+  background: #0f0f1a;
+  border: 1px solid #2a2a4a;
+  border-radius: 5px;
+  padding: 0.4rem 0.3rem;
+  color: #e8e0ff;
+  font-size: 0.9rem;
+  text-align: center;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+.statField input:focus {
+  border-color: #7c6fcd;
+}
+
+.row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.defensePreview {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 0.75rem;
+  background: #141428;
+  border: 1px solid #2a2a4a;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: #9080c0;
+}
+
+/* Skill block */
+.skillBlock {
+  background: #141428;
+  border: 1px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.skillTitle {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #7c6fcd;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.preview {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.4rem 0.6rem;
+  background: #0f0f1a;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  color: #9080c0;
+}
+
+.preview strong {
+  color: #c0b8f0;
+}
+
+.dot {
+  color: #3a3550;
+}
+
+.red   { color: #e06060; }
+.green { color: #60c060; }
+
+.error {
+  color: #e06060;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.btnRow {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.cancelBtn {
+  background: none;
+  border: 1px solid #3a2a4a;
+  border-radius: 6px;
+  padding: 0.55rem 1.2rem;
+  color: #7a6080;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.cancelBtn:hover {
+  border-color: #6a5080;
+  color: #a080c0;
+}
+
+.submitBtn {
+  background: #4a3fcd;
+  border: none;
+  border-radius: 6px;
+  padding: 0.55rem 1.5rem;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.submitBtn:hover:not(:disabled) {
+  background: #6350e0;
+}
+.submitBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -95,3 +95,53 @@
   font-size: 0.85rem;
   text-align: center;
 }
+
+.sidebarHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.sidebarHeader .sectionTitle {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.addBtn {
+  background: #2a2a4a;
+  border: 1px solid #4a3fcd;
+  border-radius: 5px;
+  color: #a090f0;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.addBtn:hover {
+  background: #3a3060;
+  color: #c0b0ff;
+}
+
+.participantList {
+  margin-top: 0.5rem;
+}
+
+.statusRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #1e1e2e;
+  font-size: 0.8rem;
+}
+
+.statusName {
+  color: #9080b0;
+}
+
+.statusEmpty {
+  color: #3a3050;
+}
